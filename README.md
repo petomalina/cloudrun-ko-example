@@ -20,7 +20,7 @@ First, build the container using Google `ko`:
 KO_DOCKER_REPO=eu.gcr.io/<your-project> ko publish .
 
 # or you can capture the image name by getting the last line of the output
-APP_IMAGE=$(KO_DOCKER_REPO=europe-west3-docker.pkg.dev/petermalina/test ko publish . | tail -1)
+APP_IMAGE=$(KO_DOCKER_REPO=europe-west3-docker.pkg.dev/petermalina/test ko publish ./cmd/server | tail -1)
 ```
 
 Deploy the image created and published by `ko`:
