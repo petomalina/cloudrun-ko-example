@@ -2,6 +2,17 @@
 
 This is a companion repo to the [Article Written on Medium](https://medium.com/@peter.malina/noops-go-on-cloud-run-689d92215c5c?sk=1b5e8f716686ddffa1b73c4a652b84d1).
 
+## Installing Tools
+
+There are two main prerequisites (not counting Go itself) when running this setup:
+- Google ko (follow the command below)
+- [Google Cloud SDK](https://cloud.google.com/sdk) (follow their instructions for setup)
+
+```
+# install Google ko
+GO111MODULE=on go get github.com/google/ko/cmd/ko
+```
+
 ## Getting Started
 
 First, build the container using Google `ko`:
